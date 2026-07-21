@@ -3,7 +3,8 @@ import { CreatePredictionRequestBody } from '../types'
 import { createPrediction } from '../services/predictionService'
 
 export async function predictionHandler(req: Request, res:Response) {
-    const { userId,leagueId, matchId, predicted_winner } = req.body as CreatePredictionRequestBody
+    const userId = req.userId!
+    const { leagueId, matchId, predicted_winner } = req.body as CreatePredictionRequestBody
     const predict = await createPrediction(userId, leagueId, matchId, predicted_winner)
 
     if (!predict.success) {

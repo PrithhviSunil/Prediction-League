@@ -8,6 +8,8 @@ export async function createPrediction(
     matchId : number, 
     predicted_winner : string
 ): Promise<PredictionResult> {
+    console.log('SERVICE GOT:', { userId, leagueId, matchId, predicted_winner })
+
     const time_check = await pool.query<MatchRow> (
         `SELECT * FROM matches WHERE id = $1 AND start_time > NOW()`,
         [matchId]
