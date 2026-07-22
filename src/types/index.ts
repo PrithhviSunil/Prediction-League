@@ -32,12 +32,10 @@ export interface LeagueRow {
 
 export interface CreateLeagueRequestBody {
     name: string
-    userId: number
 }
 
 export interface JoinLeagueRequestBody {
-    invite_code : string,
-    userId : number
+    invite_code : string
 }
 
 export interface MatchRow {
