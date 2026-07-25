@@ -30,7 +30,7 @@ This is a REST API built to practice production-style backend engineering: layer
 - **Auth:** JWT (`jsonwebtoken`) + bcrypt password hashing
 
 ## Architecture
-
+ 
 The API uses a layered architecture to keep concerns separated:
 
 ```
