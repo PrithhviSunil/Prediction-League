@@ -14,6 +14,7 @@ This is a REST API built to practice production-style backend engineering: layer
 5. Members submit predictions before kickoff; predictions lock once the match starts.
 6. When a match is resolved, every prediction is scored and all leaderboards update in a single atomic operation.
 
+
 ## Scoring
 
 | Outcome | Points |
