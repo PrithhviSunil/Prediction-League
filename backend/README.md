@@ -2,6 +2,7 @@ The backend for the multiplayer sports prediction platform where friends create 
 
 This is a REST API built to practice production-style backend engineering: layered architecture, relational schema design, authentication, and transactional data integrity.
 
+
 > **Status:** Backend complete. Frontend (React) in progress.
 
 ## How It Works
@@ -12,6 +13,7 @@ This is a REST API built to practice production-style backend engineering: layer
 4. Matches are added with two teams, a kickoff time, and an optional underdog.
 5. Members submit predictions before kickoff; predictions lock once the match starts.
 6. When a match is resolved, every prediction is scored and all leaderboards update in a single atomic operation.
+
 
 ## Scoring
 
