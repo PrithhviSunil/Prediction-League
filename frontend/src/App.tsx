@@ -4,6 +4,7 @@ import Register from './Register'
 import Leaderboard from './Leaderboard'
 import Leagues from './Leagues'
 import Matches from './Matches'
+import Admin from './Admin'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Link to="/leaderboard">Leaderboard</Link>
         <Link to="/leagues">Leagues</Link> |{' '}
         <Link to="/matches">Matches</Link> |{' '}
+        <Link to="/admin">Admin</Link> |{' '}
       </nav>
 
       <Routes>
@@ -22,6 +24,7 @@ function App() {
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/leagues" element={<Leagues />} />
         <Route path="/matches" element={<Matches />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   )
