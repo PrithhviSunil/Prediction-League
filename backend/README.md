@@ -107,6 +107,7 @@ Protected routes require an `Authorization: Bearer <token>` header.
 
 The API runs at `http://localhost:3000`.
 
+
 ## Roadmap
 
 - [x] Authentication (register, login, JWT middleware)
