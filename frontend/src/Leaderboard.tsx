@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 
+const API = import.meta.env.VITE_API_URL
 interface LeaderboardEntry {
   username: string
   points: number
@@ -10,7 +11,7 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/leagues/1/leaderboard')
+    fetch(`${API}/api/leagues/1/leaderboard`)
       .then(res => res.json())
       .then(data => {
         setPlayers(data)

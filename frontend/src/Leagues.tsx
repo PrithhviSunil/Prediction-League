@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+const API = import.meta.env.VITE_API_URL
 function Leagues() {
   const [leagueName, setLeagueName] = useState('')
   const [inviteCode, setInviteCode] = useState('')
@@ -10,7 +11,7 @@ function Leagues() {
     setMessage('')
     const token = localStorage.getItem('token')
 
-    const res = await fetch('http://localhost:3000/api/leagues', {
+    const res = await fetch(`${API}/api/leagues`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -32,7 +33,7 @@ function Leagues() {
     setMessage('')
     const token = localStorage.getItem('token')
 
-    const res = await fetch('http://localhost:3000/api/leagues/join', {
+    const res = await fetch(`${API}/api/leagues/join`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

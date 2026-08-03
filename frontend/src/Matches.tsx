@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 
+const API = import.meta.env.VITE_API_URL
 interface Match {
   id: number
   team1: string
@@ -14,7 +15,7 @@ function Matches() {
   const [message, setMessage] = useState('')
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/matches')
+    fetch(`${API}/api/matches`)
       .then(res => res.json())
       .then(data => setMatches(data))
   }, [])
@@ -23,7 +24,7 @@ function Matches() {
     setMessage('')
     const token = localStorage.getItem('token')
 
-    const res = await fetch('http://localhost:3000/api/predictions', {
+    const res = await fetch(`${API}/api/predictions`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
