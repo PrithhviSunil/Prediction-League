@@ -5,6 +5,7 @@ This is a REST API built to practice production-style backend engineering: layer
 
 > **Status:** Backend complete. Frontend (React) in progress.
 
+
 ## How It Works
 
 1. Users register and log in — a JWT is issued on login.
