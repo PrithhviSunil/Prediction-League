@@ -8,6 +8,7 @@ This app consumes the [backend REST API](../backend) — handling authentication
 
 ## Features
 
+
 - **Authentication** — register and log in; the JWT is stored client-side and attached to protected requests.
 - **Leagues** — create a private league (with a shareable invite code) or join one by code.
 - **Predictions** — browse upcoming matches and submit a pick before kickoff.
