@@ -60,6 +60,7 @@ The backend must be running first (see the [backend README](../backend)).
    ```bash
    npm run dev
    ```
+   
 3. Open the URL Vite prints (usually `http://localhost:5173`).
 
 ## Roadmap
