@@ -3,6 +3,7 @@ The backend for the multiplayer sports prediction platform where friends create 
 This is a REST API built to practice production-style backend engineering: layered architecture, relational schema design, authentication, and transactional data integrity.
 
 
+
 > **Status:** Backend complete. Frontend (React) in progress.
 
 
