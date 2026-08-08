@@ -1,6 +1,7 @@
 The backend for the multiplayer sports prediction platform where friends create private leagues and compete to predict the outcomes of real matches. Correct picks earn points, backing the underdog earns bonus points, and a live leaderboard tracks who's on top.
 
 
+
 This is a REST API built to practice production-style backend engineering: layered architecture, relational schema design, authentication, and transactional data integrity.
 
 
