@@ -1,5 +1,6 @@
 Frontend
 
+
 The React frontend for a multiplayer sports prediction platform where friends create private leagues and compete to predict the outcomes of real matches.
 
 
