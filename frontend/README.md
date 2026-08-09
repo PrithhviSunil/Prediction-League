@@ -2,6 +2,7 @@ Frontend
 
 The React frontend for a multiplayer sports prediction platform where friends create private leagues and compete to predict the outcomes of real matches.
 
+
 This app consumes the [backend REST API](../backend) — handling authentication, league management, predictions, and live leaderboards.
 
 > **Status:** In active development.
