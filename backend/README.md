@@ -73,6 +73,7 @@ Submitting a prediction passes through a three-check pipeline before it's accept
 2. The user is a member of the league they're predicting in.
 3. The user hasn't already predicted this match in this league.
 
+
 ## API Endpoints
 
 | Method | Endpoint | Description | Auth |
@@ -86,6 +87,7 @@ Submitting a prediction passes through a three-check pipeline before it's accept
 | GET | `/api/matches` | List matches | — |
 | POST | `/api/matches/:id/resolve` | Resolve a match and score predictions | ✅ |
 | POST | `/api/predictions` | Submit a prediction | ✅ |
+
 
 Protected routes require an `Authorization: Bearer <token>` header.
 
