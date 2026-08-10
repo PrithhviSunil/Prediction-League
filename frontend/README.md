@@ -56,6 +56,7 @@ await fetch('http://localhost:3000/api/predictions', {
 
 The backend must be running first (see the [backend README](../backend)).
 
+
 1. Install dependencies:
    ```bash
    npm install
