@@ -91,6 +91,7 @@ Submitting a prediction passes through a three-check pipeline before it's accept
 
 Protected routes require an `Authorization: Bearer <token>` header.
 
+
 ## Running Locally
 
 1. Install dependencies:
