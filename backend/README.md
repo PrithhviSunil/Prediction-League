@@ -12,6 +12,7 @@ This is a REST API built to practice production-style backend engineering: layer
 
 ## How It Works
 
+
 1. Users register and log in — a JWT is issued on login.
 2. A user creates a league and receives a shareable invite code.
 3. Friends join the league using that code.
