@@ -94,6 +94,7 @@ Protected routes require an `Authorization: Bearer <token>` header.
 
 ## Running Locally
 
+
 1. Install dependencies:
    ```bash
    npm install
