@@ -127,7 +127,7 @@ The API runs at `http://localhost:3000`.
 - [x] Predictions with validation
 - [x] Transactional scoring engine
 - [x] Leaderboards
-- [ ] React frontend
-- [ ] Deployment (Vercel + hosted Postgres)
+- [x] React frontend
+- [x] Deployment (Vercel + hosted Postgres)
 - [ ] Automated fixture ingestion via a sports data API
 - [ ] Configurable underdog multipliers per league
