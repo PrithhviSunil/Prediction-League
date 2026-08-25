@@ -47,7 +47,9 @@ This project was as much about learning production backend engineering as it was
 
 ## Running Locally
 
+
 Both the backend and frontend need to be running:
+
 
 ```bash
 # Terminal 1
