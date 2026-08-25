@@ -3,6 +3,7 @@ A multiplayer web app where friends create private leagues and compete to predic
 
 ---
 
+
 ## What It Does
 
 1. Users register and log in (JWT-based auth).
