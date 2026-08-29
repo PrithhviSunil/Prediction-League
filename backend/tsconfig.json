@@ -5,8 +5,7 @@
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "outDir": "./dist",
-    // Allow source files outside ./src (e.g. scripts/) to be included in the program
-    "rootDir": "./",
+    "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true
@@ -40,6 +39,7 @@
     // Recommended Options
    
   },
+  "exclude": ["scripts", "node_modules", "dist"],
   "ts-node": {
     "files": true
   }
