@@ -18,7 +18,7 @@ function App() {
         <Link to="/leagues" className="text-neutral-400 hover:text-white text-sm transition">Leagues</Link>
         <Link to="/matches" className="text-neutral-400 hover:text-white text-sm transition">Matches</Link>
         <Link to="/leaderboard" className="text-neutral-400 hover:text-white text-sm transition">Leaderboard</Link>
-        <Link to="/admin" className="text-neutral-400 hover:text-white text-sm transition">Admin</Link>
+        
       </nav>
 
       <Routes>
