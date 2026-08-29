@@ -9,28 +9,29 @@ function Leagues() {
   const [message, setMessage] = useState('')
 
   async function handleCreate() {
-    setMessage('')
-    const token = localStorage.getItem('token')
-    const res = await fetch(`${API}/api/leagues`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
-      body: JSON.stringify({ name: leagueName })
-    })
-    if (!res.ok) { setMessage('Failed to create league'); return }
-    const data = await res.json()
-    setCreatedCode(data.invite_code)
+  setMessage('')
+  const token = localStorage.getItem('token')
+  const res = await fetch(`${API}/api/leagues`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+    body: JSON.stringify({ name: leagueName })
+  })
+  if (!res.ok) { setMessage('Failed to create league'); return }
+  const data = await res.json()
+  setCreatedCode(`ID: ${data.id} — Invite code: ${data.invite_code}`)
+  
   }
-
   async function handleJoin() {
-    setMessage('')
-    const token = localStorage.getItem('token')
-    const res = await fetch(`${API}/api/leagues/join`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
-      body: JSON.stringify({ invite_code: inviteCode })
-    })
-    if (!res.ok) { setMessage('Failed to join — invalid code'); return }
-    setMessage('Joined league successfully.')
+  setMessage('')
+  const token = localStorage.getItem('token')
+  const res = await fetch(`${API}/api/leagues/join`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+    body: JSON.stringify({ invite_code: inviteCode })
+  })
+  if (!res.ok) { setMessage('Failed to join — invalid code'); return }
+  const data = await res.json()
+  setMessage(`Joined league — ID: ${data.id}`)
   }
 
   const inputClass = "w-full px-3 py-2.5 bg-neutral-950 border border-neutral-800 text-white placeholder-neutral-600 text-sm focus:outline-none focus:border-neutral-500"
