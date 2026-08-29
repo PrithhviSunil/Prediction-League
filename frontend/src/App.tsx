@@ -9,22 +9,14 @@ import Admin from './Admin'
 function App() {
   return (
     <BrowserRouter>
-      <nav>
-        <Link to="/login">Login</Link> |{' '}
-        <Link to="/register">Register</Link> |{' '}
-        <Link to="/leaderboard">Leaderboard</Link>
-        <Link to="/leagues">Leagues</Link> |{' '}
-        <Link to="/matches">Matches</Link> |{' '}
-        <Link to="/admin">Admin</Link> |{' '}
-      </nav>
 
-      <nav className="bg-slate-800 px-6 py-4 flex gap-6 shadow-md">
-        <Link to="/login" className="text-slate-200 hover:text-emerald-400 font-medium transition">Login</Link>
-        <Link to="/register" className="text-slate-200 hover:text-emerald-400 font-medium transition">Register</Link>
-        <Link to="/leagues" className="text-slate-200 hover:text-emerald-400 font-medium transition">Leagues</Link>
-        <Link to="/matches" className="text-slate-200 hover:text-emerald-400 font-medium transition">Matches</Link>
-        <Link to="/leaderboard" className="text-slate-200 hover:text-emerald-400 font-medium transition">Leaderboard</Link>
-        <Link to="/admin" className="text-slate-200 hover:text-emerald-400 font-medium transition">Admin</Link>
+      <nav className="bg-black border-b border-neutral-800 px-6 py-4 flex gap-6">
+        <Link to="/login" className="text-neutral-400 hover:text-white text-sm transition">Login</Link>
+        <Link to="/register" className="text-neutral-400 hover:text-white text-sm transition">Register</Link>
+        <Link to="/leagues" className="text-neutral-400 hover:text-white text-sm transition">Leagues</Link>
+        <Link to="/matches" className="text-neutral-400 hover:text-white text-sm transition">Matches</Link>
+        <Link to="/leaderboard" className="text-neutral-400 hover:text-white text-sm transition">Leaderboard</Link>
+        <Link to="/admin" className="text-neutral-400 hover:text-white text-sm transition">Admin</Link>
       </nav>
 
       <Routes>
