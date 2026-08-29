@@ -1,12 +1,17 @@
 Frontend
 
+
 The React frontend for a multiplayer sports prediction platform where friends create private leagues and compete to predict the outcomes of real matches.
+
 
 This app consumes the [backend REST API](../backend) — handling authentication, league management, predictions, and live leaderboards.
 
 > **Status:** In active development.
 
+
 ## Features
+
+
 
 - **Authentication** — register and log in; the JWT is stored client-side and attached to protected requests.
 - **Leagues** — create a private league (with a shareable invite code) or join one by code.
@@ -51,6 +56,7 @@ await fetch('http://localhost:3000/api/predictions', {
 
 The backend must be running first (see the [backend README](../backend)).
 
+
 1. Install dependencies:
    ```bash
    npm install
@@ -59,6 +65,7 @@ The backend must be running first (see the [backend README](../backend)).
    ```bash
    npm run dev
    ```
+   
 3. Open the URL Vite prints (usually `http://localhost:5173`).
 
 ## Roadmap

@@ -1,11 +1,18 @@
 The backend for the multiplayer sports prediction platform where friends create private leagues and compete to predict the outcomes of real matches. Correct picks earn points, backing the underdog earns bonus points, and a live leaderboard tracks who's on top.
 
+
+
 This is a REST API built to practice production-style backend engineering: layered architecture, relational schema design, authentication, and transactional data integrity.
+
+
 
 
 > **Status:** Backend complete. Frontend (React) in progress.
 
+
+
 ## How It Works
+
 
 1. Users register and log in — a JWT is issued on login.
 2. A user creates a league and receives a shareable invite code.
@@ -68,6 +75,7 @@ Submitting a prediction passes through a three-check pipeline before it's accept
 2. The user is a member of the league they're predicting in.
 3. The user hasn't already predicted this match in this league.
 
+
 ## API Endpoints
 
 | Method | Endpoint | Description | Auth |
@@ -82,9 +90,12 @@ Submitting a prediction passes through a three-check pipeline before it's accept
 | POST | `/api/matches/:id/resolve` | Resolve a match and score predictions | ✅ |
 | POST | `/api/predictions` | Submit a prediction | ✅ |
 
+
 Protected routes require an `Authorization: Bearer <token>` header.
 
+
 ## Running Locally
+
 
 1. Install dependencies:
    ```bash
@@ -116,7 +127,7 @@ The API runs at `http://localhost:3000`.
 - [x] Predictions with validation
 - [x] Transactional scoring engine
 - [x] Leaderboards
-- [ ] React frontend
-- [ ] Deployment (Vercel + hosted Postgres)
+- [x] React frontend
+- [x] Deployment (Vercel + hosted Postgres)
 - [ ] Automated fixture ingestion via a sports data API
 - [ ] Configurable underdog multipliers per league
